@@ -1,0 +1,9 @@
+<div class="container">
+    <div *ngFor="let tmp of productos" class="card" style="width: 18rem;">
+        <img [src]="tmp.urlImg" class="card-img-top" [alt]="tmp.nombre">
+        <div class="card-body">
+            <h5 class="card-title">{{tmp.nombre}}</h5>
+            <p class="card-text">{{tmp.descripcion}}</p>
+            <h6>{{tmp.precio|currency:'MX'}}</h6>
+        </div>
+    </div>
